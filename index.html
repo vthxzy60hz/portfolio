@@ -90,6 +90,30 @@
       font-size: 0.9rem;
       color: #64748b;
     }
+
+    .examples {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .example {
+      border: 2px solid #334155;
+      border-radius: 1rem;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .example img {
+      width: 100%;
+      height: auto;
+      transition: transform 0.3s ease;
+    }
+
+    .example img:hover {
+      transform: scale(1.05);
+    }
   </style>
 </head>
 <body>
@@ -109,6 +133,19 @@
         <div class="service">
           <h3>Criação de Sites</h3>
           <p>Desenvolvo sites modernos, rápidos e responsivos para empresas e projetos pessoais.</p>
+          
+          <!-- Exemplo de sites criados -->
+          <div class="examples">
+            <div class="example">
+              <img src="https://via.placeholder.com/300x200.png?text=Exemplo+Site+1" alt="Exemplo de Site 1">
+            </div>
+            <div class="example">
+              <img src="https://via.placeholder.com/300x200.png?text=Exemplo+Site+2" alt="Exemplo de Site 2">
+            </div>
+            <div class="example">
+              <img src="https://via.placeholder.com/300x200.png?text=Exemplo+Site+3" alt="Exemplo de Site 3">
+            </div>
+          </div>
         </div>
       </div>
     </section>
